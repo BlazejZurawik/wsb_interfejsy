@@ -1,0 +1,29 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border-radius:5px;
+  border: 1px solid #eee;
+  background-color: #b46262;
+  transition: all 0.2s ease-in-out;
+  line-height: 24px;
+}
+
+.card--small {
+  height: 100px;
+  width: 100px;
+}
+.card--big {
+  height: 160px;
+  width: 200px;
+}
+
+.card__img {
+  height: 50%;
+  min-height: 50px;
+  width: 70%;
+  min-width: 70px;
+  background-color: aqua;
+}
