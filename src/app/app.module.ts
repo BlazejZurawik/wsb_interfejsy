@@ -1,28 +1,23 @@
+import { HomeModule } from './components/home/home.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NameComponent } from './components/name/name.component';
-import { AlbumComponent } from './components/album/album.component';
-import { GroupComponent } from './components/group/group.component';
-import { HelloWorldComponent } from './components/hello-world/hello-world.component';
-import { CardComponent } from './components/card/card.component';
+import { SharedService } from './shared/shared.service';
+import { AboutModule } from './components/about/about.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NameComponent,
-    AlbumComponent,
-    GroupComponent,
-    HelloWorldComponent,
-    CardComponent
   ],
   imports: [
     BrowserModule,
+    HomeModule,
+    AboutModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [SharedService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

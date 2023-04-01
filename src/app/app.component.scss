@@ -41,13 +41,40 @@
     margin: 0 16px;
   }
 
-  .content {
+  .toolbar__actions {
     display: flex;
-    margin: 82px auto 32px;
-    padding: 0 16px;
-    width: 80%;
-    height: 100vh;
-    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    margin-right: 10px;
+
+    .material-icons {
+      cursor: pointer;
+    }
   }
+
+  .toolbar__nav {
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    i {
+      margin-left: 20px;
+      cursor: pointer;
+    }
+  }
+
+  .content {
+    height: 100vh;
+  }
+
+  .content--contrast-on {
+    background-color: rgb(110, 110, 110);
+    transition: 0.5s;
+  }
+  .content--contrast-off {
+    background-color: white;
+    transition: 0.5s;
+  }
+
+

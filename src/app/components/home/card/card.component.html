@@ -1,0 +1,11 @@
+<div
+  class="card"
+  [ngClass]="[type === 'big' ? 'card--big' : 'card--small', contrast ? 'card--contrast' : '']"
+  >
+  <h1>{{title}}</h1>
+  <p class="card__description">{{description}}</p>
+  <div style="height: 40%;">
+    <img class="card__img" src="https://thumbs.dreamstime.com/b/aerial-view-lago-antorno-dolomites-lake-mountain-landscape-alps-peak-misurina-cortina-di-ampezzo-italy-reflected-103752677.jpg">
+  </div>
+
+</div>
