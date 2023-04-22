@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { SharedService } from './shared/shared.service';
 
 @Component({
@@ -6,12 +6,10 @@ import { SharedService } from './shared/shared.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'lab2-angular';
-
+export class AppComponent implements OnInit {
   constructor(public sharedService: SharedService) {}
 
-  changeContrast(contrast: boolean) {
-    this.sharedService.contrast = contrast;
+  ngOnInit(): void {
+    sessionStorage.setItem('password', 'test')
   }
 }

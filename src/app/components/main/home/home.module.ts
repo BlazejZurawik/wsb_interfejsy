@@ -1,4 +1,4 @@
-import { SharedService } from './../../shared/shared.service';
+import { SharedService } from './../../../shared/shared.service';
 import { NgModule, Component } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AlbumComponent } from './album/album.component';

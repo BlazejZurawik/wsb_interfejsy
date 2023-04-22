@@ -1,0 +1,12 @@
+<div class="login">
+  <div class="login__card">
+    <h1>Login</h1>
+
+    <div class="login__card--form">
+      <input [(ngModel)]="credentials.login">
+      <input [(ngModel)]="credentials.password">
+    </div>
+
+    <button (click)="login()">Log in</button>
+  </div>
+</div>
